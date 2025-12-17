@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio: Integración SAP EAM con Mantenimiento Predictivo - Industria Petrolera</title>
+    <style>
+        /* Industrial Oil Theme: Dark blues, blacks, gold accents, rugged fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+        body {
+            margin: 0; font-family: 'Roboto Slab', serif; background: linear-gradient(135deg, #0a1a2f 0%, #1a2a4a 50%, #0a1a2f 100%);
+            color: #e0e0e0; line-height: 1.6;
+        }
+        header {
+            background: rgba(0,20,40,0.9); padding: 2rem; text-align: center; position: relative;
+            border-bottom: 3px solid #d4a017; /* Gold pipeline accent */
+        }
+        header::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: repeating-linear-gradient(90deg, #d4a017, #d4a017 10px, #b8860b 10px, #b8860b 20px); /* Pipeline texture */
+        }
+        h1 { font-family: 'Orbitron', monospace; font-size: 2.5rem; color: #d4a017; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+        nav { background: rgba(10,26,47,0.95); padding: 1rem; position: sticky; top: 0; z-index: 10; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { margin: 0 1rem; }
+        nav a { color: #e0e0e0; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border: 1px solid #d4a017; border-radius: 5px; transition: all 0.3s; }
+        nav a:hover { background: #d4a017; color: #0a1a2f; }
+        section { padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-family: 'Orbitron', monospace; font-size: 2rem; color: #d4a017; border-bottom: 2px solid #1a2a4a; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .image-placeholder {
+            background: linear-gradient(45deg, #333 25%, transparent 25%), linear-gradient(-45deg, #333 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #333 75%), linear-gradient(-45deg, transparent 75%, #333 75%);
+            background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px; height: 200px; display: flex; align-items: center; justify-content: center; color: #999; font-style: italic; margin: 1rem 0;
+            border: 2px dashed #d4a017; border-radius: 8px;
+        }
+        ul { list-style: none; padding-left: 0; }
+        ul li { background: rgba(255,255,255,0.1); margin: 0.5rem 0; padding: 1rem; border-left: 4px solid #d4a017; border-radius: 5px; }
+        .flow-step { background: rgba(26,42,74,0.8); padding: 1.5rem; margin: 1rem 0; border-radius: 10px; position: relative; }
+        .flow-step::before { content: '🔧'; position: absolute; left: -1rem; top: 1rem; font-size: 1.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; background: rgba(255,255,255,0.1); }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #1a2a4a; }
+        th { background: #d4a017; color: #0a1a2f; }
+        footer { background: rgba(0,20,40,0.9); text-align: center; padding: 2rem; border-top: 3px solid #d4a017; }
+        @media (max-width: 768px) { section { padding: 2rem 1rem; } h1 { font-size: 2rem; } nav ul { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Integración SAP EAM con Mantenimiento Predictivo</h1>
+        <p>Optimización de Activos Críticos en la Industria Petrolera</p>
+        <!-- Hero Image Suggestion: Unsplash search "oil rig at night" – e.g., https://unsplash.com/photos/black-oil-platform-on-sea-during-night-time-abc123 – 1200x400px, overlay with CSS darken filter -->
+        <div class="image-placeholder">Reemplazar con imagen de plataforma petrolera nocturna (1200x400px)</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#seccion2">SAP EAM</a></li>
+            <li><a href="#seccion3">Requisitos</a></li>
+            <li><a href="#seccion4">Flujo de Trabajo</a></li>
+            <li><a href="#seccion5">Planificación Técnica</a></li>
+            <li><a href="#seccion6">KPIs</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion2">
+        <h2>2. Sistema SAP EAM y Necesidad de Integración</h2>
+        <h3>Descripción del Sistema SAP EAM</h3>
+        <p>SAP EAM (Enterprise Asset Management) es un módulo del ERP SAP diseñado para gestionar de manera integral el ciclo de vida de los activos físicos, permitiendo planificar, ejecutar, controlar y optimizar las actividades de mantenimiento. En la industria petrolera, SAP EAM se utiliza para administrar activos como bombas, compresores, motores eléctricos, intercambiadores de calor, válvulas, tuberías y sistemas eléctricos críticos.</p>
+        
+        <h3>Justificación del Uso de SAP EAM</h3>
+        <ul>
+            <li>Su capacidad para gestionar grandes volúmenes de activos críticos.</li>
+            <li>Integración con otros módulos SAP (MM, FI, CO).</li>
+            <li>Gestión de órdenes de trabajo, historial de mantenimiento y costos.</li>
+            <li>Generación de indicadores clave de desempeño (KPI).</li>
+        </ul>
+        
+        <h3>Necesidad del Mantenimiento Predictivo</h3>
+        <p>Según el capítulo 3 del libro, el mantenimiento predictivo se basa en el monitoreo continuo de la condición de los equipos mediante técnicas como análisis de vibraciones, termografía, ultrasonido y análisis de aceite. En la industria del petróleo, donde los equipos operan en condiciones severas, esta estrategia permite:</p>
+        <ul>
+            <li>Reducir paradas no planificadas.</li>
+            <li>Minimizar riesgos de accidentes y daños ambientales.</li>
+            <li>Optimizar costos de mantenimiento.</li>
+            <li>Prolongar la vida útil de los activos.</li>
+        </ul>
+        <!-- Image Suggestion: Pexels "oil pumpjack sensors" – 800x400px -->
+        <div class="image-placeholder">Reemplazar con imagen de sensores en bomba petrolera (800x400px)</div>
+    </section>
+
+    <section id="seccion3">
+        <h2>3. Requisitos para la Integración</h2>
+        <h3>Requisitos Técnicos</h3>
+        <ul>
+            <li>Sensores de condición (vibración, temperatura, presión, ultrasonido).</li>
+            <li>Sistemas de adquisición de datos (IoT industrial).</li>
+            <li>Plataforma de análisis de datos.</li>
+            <li>Conectividad entre sensores y SAP EAM.</li>
+        </ul>
+        <h3>Requisitos Operativos</h3>
+        <ul>
+            <li>Definición de equipos críticos.</li>
+            <li>Parámetros operacionales aceptables.</li>
+            <li>Frecuencia de medición.</li>
+            <li>Procedimientos de inspección y diagnóstico.</li>
+        </ul>
+        <h3>Requisitos Organizacionales</h3>
+        <ul>
+            <li>Personal capacitado en técnicas predictivas.</li>
+            <li>Cultura organizacional orientada a mantenimiento proactivo.</li>
+            <li>Procedimientos documentados en el sistema.</li>
+        </ul>
+    </section>
+
+    <section id="seccion4">
+        <h2>4. Flujo de Trabajo de la Integración</h2>
+        <div class="flow-step">
+            <strong>Monitoreo del Activo:</strong> Sensores instalados en equipos críticos (bombas, compresores, motores).
+        </div>
+        <div class="flow-step">
+            <strong>Captura de Datos:</strong> Recolección de variables como vibración, temperatura y condición del lubricante.
+        </div>
+        <div class="flow-step">
+            <strong>Análisis Predictivo:</strong> Evaluación de tendencias, correlaciones y límites de operación.
+        </div>
+        <div class="flow-step">
+            <strong>Integración con SAP EAM:</strong> Registro automático de alertas. Generación de notificaciones. Creación de órdenes de mantenimiento predictivo.
+        </div>
+        <div class="flow-step">
+            <strong>Ejecución del Mantenimiento:</strong> Intervención planificada según el estado real del equipo.
+        </div>
+        <div class="flow-step">
+            <strong>Retroalimentación:</strong> Actualización del historial del activo y análisis de resultados.
+        </div>
+        <!-- Image Suggestion: Diagram of workflow – Create in Canva or use "oil maintenance flowchart" stock -->
+        <div class="image-placeholder">Reemplazar con diagrama de flujo (1000x500px)</div>
+    </section>
+
+    <section id="seccion5">
+        <h2>5. Planificación Técnica de la Integración</h2>
+        <h3>Configuración del Software</h3>
+        <ul>
+            <li>Parametrización de SAP EAM para mantenimiento basado en condición.</li>
+            <li>Definición de umbrales de alarma.</li>
+            <li>Integración con sistemas CMMS y plataformas IoT.</li>
+        </ul>
+        <h3>Instalación de Sensores</h3>
+        <ul>
+            <li>Sensores de vibración en equipos rotativos.</li>
+            <li>Sensores térmicos en sistemas eléctricos.</li>
+            <li>Ultrasonido para detección de fugas.</li>
+            <li>Análisis de aceite en maquinaria crítica.</li>
+        </ul>
+        <h3>Gestión de la Información</h3>
+        <ul>
+            <li>Almacenamiento de datos históricos.</li>
+            <li>Análisis de tendencias.</li>
+            <li>Soporte a la toma de decisiones.</li>
+        </ul>
+    </section>
+
+    <section id="seccion6">
+        <h2>6. Indicadores Clave de Rendimiento (KPIs)</h2>
+        <table>
+            <thead>
+                <tr><th>KPI</th><th>Descripción</th><th>Beneficio Esperado</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>MTBF (Tiempo medio entre fallas)</td><td>Incremento al anticipar fallas</td><td>Mejora confiabilidad</td></tr>
+                <tr><td>MTTR (Tiempo medio de reparación)</td><td>Reducción mediante intervenciones planificadas</td><td>Menos downtime</td></tr>
+                <tr><td>Disponibilidad</td><td>Mejora de la capacidad operativa</td><td>Mayor producción</td></tr>
+                <tr><td>Confiabilidad</td><td>Reducción de eventos correctivos</td><td>Menos riesgos</td></tr>
+                <tr><td>Backlog</td><td>Mejor control de carga de trabajo</td><td>Optimización recursos</td></tr>
+                <tr><td>OEE</td><td>Aumento de eficiencia global</td><td>Eficiencia operativa</td></tr>
+            </tbody>
+        </table>
+        <p>El monitoreo continuo de estos indicadores permite identificar oportunidades de mejora, optimizar recursos y fortalecer la eficiencia operativa en la empresa petrolera.</p>
+        <!-- Image Suggestion: KPI dashboard mockup – "oil industry dashboard" stock -->
+        <div class="image-placeholder">Reemplazar con dashboard de KPIs (900x400px)</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portafolio SAP EAM - Industria Petrolera. Desarrollado para optimización de activos.</p>
+    </footer>
+</body>
+</html>
